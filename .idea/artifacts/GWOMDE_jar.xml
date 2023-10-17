@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact name="GWOMDE:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GWOMDE_jar</output-path>
+    <root id="root">
+      <element id="archive" name="GWOMDE.jar">
+        <element id="module-output" name="GWOMDE" />
+      </element>
+      <element id="library" level="project" name="Maven: org.eclipse.ocl:org.eclipse.ocl:3.4.2.v20140725-2242" />
+      <element id="library" level="project" name="Maven: org.eclipse.emf:org.eclipse.emf.ecore.xmi:2.16.0" />
+      <element id="library" level="project" name="Maven: lpg.runtime:java:2.0.17-v201004271640" />
+      <element id="library" level="project" name="Maven: org.eclipse.ocl:org.eclipse.ocl.ecore:3.3.100.v20140610-0641" />
+      <element id="library" level="project" name="Maven: org.eclipse.ocl:org.eclipse.ocl.common:1.2.0.v20140610-0641" />
+      <element id="library" level="project" name="Maven: org.eclipse.core:org.eclipse.core.runtime:3.9.0.v20130326-1255" />
+      <element id="library" level="project" name="Maven: org.eclipse.emf:org.eclipse.emf.common:2.27.0" />
+      <element id="library" level="project" name="Maven: org.eclipse.emf:org.eclipse.emf.ecore:2.25.0" />
+      <element id="library" level="project" name="Maven: org.eclipse.core:org.eclipse.osgi:3.10.1.v20140909-1633." />
+    </root>
+  </artifact>
+</component>
