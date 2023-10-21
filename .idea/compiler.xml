@@ -10,9 +10,10 @@
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
         </processorPath>
-        <module name="ACOMDE-Final-BugFix" />
         <module name="GWOMDE" />
         <module name="ACOMDE" />
+        <module name="ACOMDE-Final-BugFix" />
+        <module name="Yekta-Framework" />
       </profile>
     </annotationProcessing>
   </component>

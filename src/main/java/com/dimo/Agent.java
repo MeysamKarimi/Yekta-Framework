@@ -1,2 +1,4 @@
-package com.dimo;public interface Agent {
+package com.dimo;
+
+public interface Agent {
 }
