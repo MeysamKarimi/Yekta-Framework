@@ -25,9 +25,9 @@ Yekta is a powerful tool for generating test models and has demonstrated remarka
 Before you begin, make sure you have the following prerequisites installed:
 
 - Java 11
-- MDE Testing framework [4]
-- anATLyzer [5]
-- ATL [6]
+- MDE Testing framework
+- anATLyzer [4]
+- ATL
 
 
 ## Getting Started
@@ -78,4 +78,15 @@ We welcome contributions to Yekta framework. If you'd like to contribute, please
 ## License
 
 This project is licensed under the MIT Licens - see the [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
+
+## References
+[1] TBC: Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Test model generation for model transformation testing applying ant colony optimization". JSS, 2023
+
+[2] TBC (SoftwareX): Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Yekta: A framework for automated test models
+generation applying meta-heuristic algorithms". SoftwareX, 2023
+
+[3] Guerra, E., Cuadrado, J. S., & de Lara, J. (2019). Towards Effective Mutation Testing for ATL. In 22nd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems, MODELS 2019, Munich, Germany, September 15-20, 2019 (pp. 78–88). IEEE. doi: 10.1109/MODELS.2019.00-13.
+
+[4] J. S´anchez Cuadrado, E. Guerra, and J. de Lara, “Static analysis of model transformations,” IEEE Trans. Software Eng., vol. 43, no. 9, pp. 868–897, 2017.
+
 
