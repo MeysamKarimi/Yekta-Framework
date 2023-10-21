@@ -39,14 +39,14 @@ To get started with Yekta framework, follow these steps:
    - Open the project in your preferred Java IDE.
 2. **Setup**:
    - Set up your project configurations and ensure all prerequisites are met, including Java 11 and the required dependencies (e.g., MDE testing framework, anATLyzer, ATL).
- **Maven Build (POM)**:
-   - If your project uses Maven (POM), you can build and manage dependencies using Maven. Open a terminal in the project directory and run the following command:
-     ```shell
-     mvn clean install
-     ```
-     This command will build your project and download any required dependencies.
-**IDE-Specific Setup**:
-   - If your IDE supports Maven integration, it should automatically recognize the POM configuration and synchronize the project. Ensure that your IDE is properly configured for Maven.
+   1. **Maven Build (POM)**:
+      - If your project uses Maven (POM), you can build and manage dependencies using Maven. Open a terminal in the project directory and run the following command:
+        ```shell
+        mvn clean install
+        ```
+        This command will build your project and download any required dependencies.
+   2. **IDE-Specific Setup**:
+      - If your IDE supports Maven integration, it should automatically recognize the POM configuration and synchronize the project. Ensure that your IDE is properly configured for Maven.
 3. **Run the Project**:
    - After building the project, you can run it from your IDE, following the standard Java application execution procedures.
 Now you're ready to use Yekta framework to create and manipulate test models with ACO, GWO, and Random algorithms.
