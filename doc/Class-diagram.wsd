@@ -1,0 +1,159 @@
+@startuml
+skinparam groupInheritance 3
+skinparam linetype polyline
+skinparam linetype ortho
+
+class App{}
+
+interface Algorithm{    
+    + run()
+}
+
+class aco.Aco #GreenYellow{
+    + run()
+}
+
+class gwo.Gwo #Orange{
+    + run()
+}
+
+class AlgorithmUI{}
+
+interface emf.ecore.Resource #LightYellow
+interface emf.ecore.EObject #LightYellow
+interface emf.ecore.ResourceSet #LightYellow
+
+class Org.eclipse.OCL #LightYellow
+
+
+interface Agent{
+    + generate()
+}
+
+class model.Model #LightBlue{    
+    + addElementForNextStep()
+    + generateResource()
+    + getFintnessValue()
+    + getModelElements()
+    + getModelResource()
+    + setFintnessValue()
+}
+
+class model.NameGenerator #LightBlue{
+    + randomName()
+}
+
+class model.RandomGenerators #LightBlue {
+    + generateRandomBoolean()
+    + generateRandomDouble()
+    + generateRandomInt()
+    + generateRandomString()
+    + generateRandomStrings()
+}
+
+class model.MetaModel #LightBlue
+{
+    + findDirectSubClasses()
+    + findInDirectSubClasses()
+    + findPossibleReplaces()
+    + findPossibleRoots()
+    + getAllInstantiableEClasses()
+    + getPossibleReplacesFor()
+}
+
+class model.DiscoveredPath #LightBlue{
+    + addedChildrenToDiscoveredPath()
+    + chooseNext()
+    + expand()   
+    + possibleRoots()
+    + rouletteWheel()
+   ----
+    + updatePheromone()
+    + evaporate() 
+}
+
+class model.Element #LightBlue{
+    + createAbstractRoot()
+    + createAbstractChild()
+    + createConcreteChild()
+    + createConcreteRoot()
+    + createEObject()
+    + createPointer()
+}
+
+class aco.Ant #GreenYellow
+{
+    + generate()
+    + getModel()
+}
+
+class gwo.Wolf #Orange{
+    + generate()
+    + getSolution()
+}
+
+class objectives.ExternalDivObjective #MediumPurple{
+    + compare()
+}
+
+class objectives.InternalDivObjective #MediumPurple{
+    + score()
+}
+
+class objectives.ModelRanker #MediumPurple{
+    + getMaxExternalDiv()
+    + rankModels()
+    + rankSolutions()
+}
+
+class ocl.Checker{
+    + check()
+    + constrainedAttribute()
+    + findConstraints()
+
+}
+
+class ocl.Checker #Pink
+
+Algorithm <|.. aco.Aco   
+Algorithm <|.. gwo.Gwo  
+
+
+App -left- AlgorithmUI : > runs
+
+AlgorithmUI -- emf.ecore.ResourceSet : > loads
+AlgorithmUI -- Org.eclipse.OCL : > loads
+
+AlgorithmUI -- Algorithm : > uses
+
+Algorithm -right- Agent : > runs
+Algorithm -- objectives.InternalDivObjective : > uses
+Algorithm -- objectives.ExternalDivObjective : > uses
+Algorithm -- objectives.ModelRanker : > uses
+
+Agent <|.. aco.Ant
+Agent <|.. gwo.Wolf
+
+aco.Aco -- aco.Ant : > runs
+gwo.Gwo -- gwo.Wolf : > runs
+
+aco.Ant -- model.DiscoveredPath : > uses
+gwo.Wolf -- model.DiscoveredPath : > uses
+
+aco.Ant -- model.Model : > generates
+gwo.Wolf -- model.Model : > generates
+
+model.Model *- model.Element
+model.Element *- emf.ecore.EObject
+model.Element *-- emf.ecore.Resource
+model.Element -- model.RandomGenerators : > uses
+model.RandomGenerators -- model.NameGenerator : > uses
+
+model.Model -- emf.ecore.ResourceSet : > uses
+model.Model -- Org.eclipse.OCL : > uses
+
+model.Element -- ocl.Checker : > uses
+model.DiscoveredPath *- model.MetaModel
+model.MetaModel *- emf.ecore.Resource
+
+@enduml
