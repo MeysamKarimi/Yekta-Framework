@@ -3,7 +3,7 @@ A framework for generating models using meta-heuristic algorithms in the context
 
 # Your Project Name
 
-Welcome to Yekta framwork! This tool is designed to generate test models using various meta-heuristic (ACO, GWO and also Random) to help generate and manipulate models based on user-defined metamodels, OCL constraints, and algorithm-specific inputs. Whether you're a researcher, developer, or tester, this tool simplifies the process of generating models for your projects.
+Welcome to Yekta framework! This tool is designed to generate test models using various meta-heuristic (ACO, GWO and also Random) to help generate and manipulate models based on user-defined metamodels, OCL constraints, and algorithm-specific inputs. Whether you're a researcher, developer, or tester, this tool simplifies the process of generating models for your projects.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -34,18 +34,21 @@ Before you begin, make sure you have the following prerequisites installed:
 
 To get started with Yekta framework, follow these steps:
 
-1. Clone the repository to your local machine.
-2. Open the project in your preferred Java IDE.
-3. Set up your project configurations and ensure all prerequisites are met, including Java 11 and the required dependencies (e.g., MDE testing framework, anATLyzer, ATL).
-4. **Maven Build (POM)**:
+1. **Clone**:
+   - Clone the repository to your local machine.
+3. **Open**:
+   - Open the project in your preferred Java IDE.
+5.**Setup**:
+   - Set up your project configurations and ensure all prerequisites are met, including Java 11 and the required dependencies (e.g., MDE testing framework, anATLyzer, ATL).
+7. **Maven Build (POM)**:
    - If your project uses Maven (POM), you can build and manage dependencies using Maven. Open a terminal in the project directory and run the following command:
      ```shell
      mvn clean install
      ```
      This command will build your project and download any required dependencies.
-5. **IDE-Specific Setup**:
+8. **IDE-Specific Setup**:
    - If your IDE supports Maven integration, it should automatically recognize the POM configuration and synchronize the project. Ensure that your IDE is properly configured for Maven.
-6. **Run the Project**:
+9. **Run the Project**:
    - After building the project, you can run it from your IDE, following the standard Java application execution procedures.
 Now you're ready to use Yekta framework to create and manipulate test models with ACO, GWO, and Random algorithms.
 
