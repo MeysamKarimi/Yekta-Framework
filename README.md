@@ -49,6 +49,7 @@ To get started with Yekta framework, follow these steps:
       - If your IDE supports Maven integration, it should automatically recognize the POM configuration and synchronize the project. Ensure that your IDE is properly configured for Maven.
 3. **Run the Project**:
    - After building the project, you can run it from your IDE, following the standard Java application execution procedures.
+
 Now you're ready to use Yekta framework to create and manipulate test models with ACO, GWO, and Random algorithms.
 
 
