@@ -83,7 +83,8 @@ We welcome contributions to Yekta framework. If you'd like to contribute, please
 This project is licensed under the MIT Licens - see the [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
 
 ## References
-[1] **TBC:** Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Test model generation for model transformation testing applying ant colony optimization". JSS, 2023.
+[1] M. Karimi, Sh. Kolahdouz-Rahimi, J. Troya (2023). "Ant-colony optimization for automating test models generation in model transformation testing". JSS 2023,
+https://authors.elsevier.com/tracking/article/details.do?aid=111882&jid=JSS&surname=Kolahdouz-Rahimi.
 
 [2] **TBC [Submitted]:** Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Yekta: A framework for automated test models generation applying meta-heuristic algorithms". SoftwareX, 2023.
 
