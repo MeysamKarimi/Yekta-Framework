@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="haibt">
+  <sons firstName="galileo"/>
+  <sons firstName="lovelace"/>
+  <sons firstName="turing"/>
+  <daughters firstName="williamson"/>
+  <daughters firstName="darwin"/>
+  <daughters firstName="liskov"/>
+</Families:Family>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="spence">
+  <sons firstName="franklin"/>
+  <sons firstName="matsumoto"/>
+  <sons firstName="noyce"/>
+  <daughters firstName="rubin"/>
+  <daughters firstName="khorana"/>
+  <daughters firstName="volhard"/>
+</Families:Family>

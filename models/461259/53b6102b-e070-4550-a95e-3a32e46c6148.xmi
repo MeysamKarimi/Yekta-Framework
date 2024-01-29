@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="meitner">
+  <sons firstName="lovelace"/>
+  <sons firstName="chaplygin"/>
+  <daughters firstName="feistel"/>
+  <daughters firstName="swirles"/>
+  <daughters firstName="lewin"/>
+</Families:Family>

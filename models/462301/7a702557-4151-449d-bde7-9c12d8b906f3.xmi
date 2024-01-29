@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="wu">
+  <companies name="einstein">
+    <employees href="models/462301/cef67699-62c5-4f83-a723-3b953bcd2ccc.xmi#//@families.0/@mothers.0"/>
+    <employees href="models/462301/cef67699-62c5-4f83-a723-3b953bcd2ccc.xmi#//@families.0/@mothers.1"/>
+    <employees href="models/462301/cef67699-62c5-4f83-a723-3b953bcd2ccc.xmi#//@families.0/@fathers.0"/>
+    <isIn href="models/462301/cef67699-62c5-4f83-a723-3b953bcd2ccc.xmi#//@cities.0"/>
+  </companies>
+</families:Country>

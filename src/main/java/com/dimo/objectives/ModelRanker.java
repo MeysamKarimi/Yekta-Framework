@@ -42,8 +42,8 @@ public class ModelRanker {
         ));
         objectives.sort(Comparator.comparing(ModelObjective::getExternalDiv).reversed());
         objectives.sort(Comparator.comparing(ModelObjective::getInternalDiv).reversed());
-        System.out.println("Internal Diversitiy:" + objectives.get(0).getInternalDiv());
-        System.out.println("External Diversitiy:" + objectives.get(0).getExternalDiv());
+        System.out.println("Internal Diversity:" + objectives.get(0).getInternalDiv());
+        System.out.println("External Diversity:" + objectives.get(0).getExternalDiv());
         //return objectives.stream().map(ModelObjective::getModel).collect(Collectors.toList());
 
         int maxExternalDiv = getMaxExternalDiv(objectives);
@@ -56,6 +56,7 @@ public class ModelRanker {
 //                    int allRefsCount = metaModel.getAllInstantiableEClasses().stream().map(EClass::getEAllReferences).map(List::size).reduce(Integer::sum).orElse(0);
                     BigDecimal sum = objective.getInternalDiv().add(BigDecimal.valueOf(objective.getExternalDiv()).divide(BigDecimal.valueOf(maxExternalDiv), 5, RoundingMode.UP));
                     model.setFintnessValue(sum.divide(BigDecimal.valueOf(2)));
+                    System.out.println("Fitness function: " + sum.divide(BigDecimal.valueOf(2)));
                 })
                 .map(ModelObjective::getModel)
                 .collect(Collectors.toList());

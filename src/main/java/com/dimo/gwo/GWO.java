@@ -4,10 +4,14 @@ import com.dimo.AlgorithmUI;
 import com.dimo.model.DiscoveredPath;
 import com.dimo.model.MetaModel;
 import com.dimo.model.Model;
+import com.dimo.objectiveFunctionLandscape.ScatterPlot;
 import com.dimo.objectives.ExternalDivObjective;
 import com.dimo.objectives.ModelRanker;
 import com.dimo.ocl.Checker;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EReference;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -75,11 +79,16 @@ public class GWO {
 //        });
     }
 
+    ScatterPlot scatterPlot = null;
     private void runOneIteration(List<Wolf> wolves){
         generateModels(wolves);
         List<Wolf> currentPopulation = combineGeneratedWolvesWithBests(wolves); //New wolves + 3 best from last iteration
         List<Wolf> sortedWolves = modelRanker.rankSolutions(currentPopulation);
         selectBests(sortedWolves); ////Save Alpha, Beta and Delta
+        if(scatterPlot == null)
+            scatterPlot = new ScatterPlot();
+        scatterPlot.visualize(sortedWolves);
+        scatterPlot.getChart().open();
         updatePositionOfWolves(sortedWolves);
         updateValueOfA();
     }
@@ -110,9 +119,71 @@ public class GWO {
                 double nextpositionValue = (nextPositionBasedOnAlpha + nextPositionBasedOnBeta + nextPositionBasedOnDelta) / 3;
                 double nextPosition = Math.tanh(nextpositionValue);
 
+                int moveSize = (int) (nextPosition / 3); //alpha, beta and delta
+
+                var differentElementsAlpha = externalDivObjective.returnDifferences(wolves.get(i).getSolution().get(j).getModelResource(), alpha.getSolution().get(j).getModelResource());
+                var differentElementsBeta = externalDivObjective.returnDifferences(wolves.get(i).getSolution().get(j).getModelResource(), beta.getSolution().get(j).getModelResource());
+                var differentElementsDelta = externalDivObjective.returnDifferences(wolves.get(i).getSolution().get(j).getModelResource(), delta.getSolution().get(j).getModelResource());
+
+                // Move wolf
+                Random ran = new Random();
+                int alphaRand = ran.nextInt(differentElementsAlpha.size());
+                int betaRand = ran.nextInt(differentElementsBeta.size());
+                int deltaRand = ran.nextInt(differentElementsDelta.size());
+
+                var alphaEObject = alpha.getSolution().get(j).getModelResource().getContents().get(0);
+                var betaEObject = beta.getSolution().get(j).getModelResource().getContents().get(0);
+                var deltaEObject = delta.getSolution().get(j).getModelResource().getContents().get(0);
+
+                var modelEObject = wolves.get(i).getSolution().get(j).getModelResource().getContents().get(0);
+                moveToElite(modelEObject, alphaEObject, moveSize);
+                moveToElite(modelEObject, betaEObject, moveSize);
+                moveToElite(modelEObject, deltaEObject, moveSize);
+
+                var isNewlyCreateModelValid =  wolves.get(i).getSolution().get(j).getModelResource()
+                        .getContents()
+                        .stream()
+                        .map(checker::check)
+                        .filter(aBoolean -> !aBoolean)
+                        .findAny().orElse(true);
+
                 // set the vector who should be replaced in next iteration
-                if(nextPosition > Math.random())
+                if(!isNewlyCreateModelValid)
+                {
+                    // Replace if fail
                     wolves.get(i).UpdateObjectiveMapperPosition(j, true);
+                }
+            }
+        }
+    }
+
+    // Method to update the model based on the alpha model
+    public static void moveToElite(EObject omega, EObject alpha, int preferredMoveSize) {
+        // Ensure alpha model and omega model are not null
+        if (alpha != null && omega != null) {
+            // Iterate over all references of the omega model
+            for (EReference reference : omega.eClass().getEAllReferences()) {
+                // Check if the reference is many-valued
+                if (reference.isMany()) {
+                    EList<EObject> alphaReferences = (EList<EObject>) alpha.eGet(reference);
+                    EList<EObject> omegaReferences = (EList<EObject>) omega.eGet(reference);
+
+                    // Update references in the omega model based on the alpha model
+                    // This replaces some references without clearing all
+                    int min = Math.min(preferredMoveSize, Math.min(alphaReferences.size(), omegaReferences.size()));
+                    for (int i = 0; i < min; i++) {
+                        omegaReferences.set(i, alphaReferences.get(i));
+                    }
+
+                    // If alphaReferences has more elements than omegaReferences, add the extras
+                    for (int i = omegaReferences.size(); i < alphaReferences.size(); i++) {
+                        omegaReferences.add(alphaReferences.get(i));
+                    }
+                } else {
+                    // Single-valued reference
+                    EObject alphaReference = (EObject) alpha.eGet(reference);
+                    omega.eSet(reference, alphaReference);
+                }
             }
         }
     }

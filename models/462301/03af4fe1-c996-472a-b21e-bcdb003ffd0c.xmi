@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ASCII"?>
+<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="brattain">
+  <families lastName="dijkstra">
+    <mothers firstName="stonebraker" family="//@families.0">
+      <livesIn href="models/462301/e86f8503-a68f-4f58-9c86-379288454965.xmi#//@cities.1"/>
+    </mothers>
+    <daughters firstName="sinoussi" family="//@families.0">
+      <livesIn href="models/462301/e9466d2d-df0f-46c0-b602-2b806aaf5d78.xmi#//@cities.0"/>
+      <goesTo href="models/462301/e9466d2d-df0f-46c0-b602-2b806aaf5d78.xmi#//@cities.0/@neighborhoods.0/@schools.0"/>
+    </daughters>
+    <sons firstName="elion" family="//@families.0">
+      <livesIn href="models/462301/e9466d2d-df0f-46c0-b602-2b806aaf5d78.xmi#//@cities.0"/>
+    </sons>
+    <registeredIn href="models/462301/e9466d2d-df0f-46c0-b602-2b806aaf5d78.xmi#//@cities.0/@neighborhoods.0"/>
+  </families>
+  <cities name="chandrasekhar">
+    <neighborhoods name="murdock">
+      <schools name="jepsen">
+        <ordinary/>
+        <ordinary/>
+        <ordinary/>
+        <ordinary/>
+        <special/>
+      </schools>
+    </neighborhoods>
+  </cities>
+</families:Country>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="bassi">
+  <sons firstName="turing"/>
+  <sons firstName="meitner"/>
+  <sons firstName="robinson"/>
+  <daughters firstName="shamir"/>
+  <daughters firstName="hodgkin"/>
+  <daughters firstName="volhard"/>
+</Families:Family>

@@ -14,6 +14,13 @@ public class ExternalDivObjective {
         return externalDiv(first, second);
     }
 
+    static Set<EObject> differencesBetweenModels;
+    public Set<EObject> returnDifferences(Resource first, Resource second) {
+        differencesBetweenModels = null;
+        externalDiv(first, second);
+        return differencesBetweenModels;
+    }
+
     private int externalDiv(Resource r1, Resource r2){
         int min = r1.getContents().size();
         if(min > r2.getContents().size())
@@ -30,6 +37,8 @@ public class ExternalDivObjective {
         else if(r2.getContents().size() > min)
             for (int i = min; i < r2.getContents().size(); i++)
                 div += countChildren(r2.getContents().get(i), r2Visited);
+
+        differencesBetweenModels = r1Visited;
         return div;
     }
     private int div(EObject e1, EObject e2, Set<EObject> e1Visited, Set<EObject> e2Visited){

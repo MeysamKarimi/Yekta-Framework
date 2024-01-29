@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ASCII"?>
+<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="raman">
+  <families lastName="goldwasser">
+    <mothers firstName="payne" family="//@families.0">
+      <livesIn href="models/461506/73f11fdb-addb-42e0-b131-8258eaba0c04.xmi#//@cities.0"/>
+    </mothers>
+    <registeredIn href="models/461506/73f11fdb-addb-42e0-b131-8258eaba0c04.xmi#//@cities.0/@neighborhoods.0"/>
+  </families>
+</families:Country>

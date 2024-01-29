@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="ASCII"?>
+<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="grothendieck">
+  <families lastName="jepsen">
+    <mothers firstName="mestorf" family="//@families.0">
+      <livesIn href="models/462301/8cb4ec71-b11e-4ff1-a5d3-cdefc78efc9d.xmi#//@cities.0"/>
+    </mothers>
+    <mothers firstName="tereshkova" family="//@families.0">
+      <livesIn href="models/462301/8cb4ec71-b11e-4ff1-a5d3-cdefc78efc9d.xmi#//@cities.0"/>
+    </mothers>
+    <mothers firstName="hugle" family="//@families.0">
+      <livesIn href="models/462301/8cb4ec71-b11e-4ff1-a5d3-cdefc78efc9d.xmi#//@cities.0"/>
+      <worksIn href="models/462301/e2952375-4186-4586-81ec-b23023905460.xmi#//@companies.0"/>
+    </mothers>
+    <mothers firstName="brattain" family="//@families.0">
+      <livesIn href="models/462301/8cb4ec71-b11e-4ff1-a5d3-cdefc78efc9d.xmi#//@cities.0"/>
+    </mothers>
+    <daughters firstName="solomon" family="//@families.0">
+      <livesIn href="models/462301/8cb4ec71-b11e-4ff1-a5d3-cdefc78efc9d.xmi#//@cities.0"/>
+    </daughters>
+    <daughters firstName="antonelli" family="//@families.0">
+      <livesIn href="models/462301/8cb4ec71-b11e-4ff1-a5d3-cdefc78efc9d.xmi#//@cities.0"/>
+    </daughters>
+  </families>
+</families:Country>

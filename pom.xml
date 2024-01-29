@@ -65,9 +65,63 @@
             <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jzy3d/jzy3d-all -->
+        <dependency>
+            <groupId>org.jzy3d</groupId>
+            <artifactId>jzy3d-all</artifactId>
+            <version>2.2.1</version>
+            <type>pom</type>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.jzy3d/jzy3d-api -->
+<!--        <dependency>-->
+<!--            <groupId>org.jzy3d</groupId>-->
+<!--            <artifactId>jzy3d-api</artifactId>-->
+<!--            <version>1.0.3</version>-->
+<!--        </dependency>-->
+        <!-- https://mvnrepository.com/artifact/org.jzy3d/jzy3d-core -->
+        <dependency>
+            <groupId>org.jzy3d</groupId>
+            <artifactId>jzy3d-core</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jzy3d</groupId>
+            <artifactId>jzy3d-native-jogl-awt</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jzy3d</groupId>
+            <artifactId>jzy3d-native-jogl-swing</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jzy3d</groupId>
+            <artifactId>jzy3d-native-jogl-newt</artifactId>
+            <version>2.2.1</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.jzy3d</groupId>-->
+<!--            <artifactId>jzy3d-native-jogl-swt</artifactId>-->
+<!--            <version>2.2.1</version>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.jzy3d</groupId>
+            <artifactId>jzy3d-tester-native</artifactId>
+            <version>2.2.1</version>
+            <!-- not scoped test to demonstrate DebugGL in src/main/java -->
+        </dependency>
     </dependencies>
 
     <repositories>
+        <repository>
+            <id>jzy3d</id>
+            <url>https://maven.jzy3d.org/releases/</url>
+        </repository>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
         <repository>
             <id>maven-restlet</id>
             <name>Public online Restlet repository</name>
