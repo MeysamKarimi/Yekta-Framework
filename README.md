@@ -24,7 +24,7 @@ Yekta is a powerful tool for generating test models and has demonstrated remarka
 
 Before you begin, make sure you have the following prerequisite installed:
 
-- [Java 11]([https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt](https://docs.oracle.com/en/java/javase/11/install/#Java-Platform%2C-Standard-Edition)
+- [Java 11](https://docs.oracle.com/en/java/javase/11/install/#Java-Platform%2C-Standard-Edition)
 
 ## Getting Started
 
