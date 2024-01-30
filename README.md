@@ -12,8 +12,8 @@ Welcome to Yekta framework! This tool is designed to generate models using the m
 
 ## Overview
 
-Yekta framework simplifies the model generation process by providing a user-friendly interface to create test models. It supports three algorithms: ACO (Ant Colony Optimization), GWO (Grey Wolf Optimization), and Random, enabling users to generate models based on specific algorithmic strategies. 
-Yekta is a powerful tool for generating test models and has demonstrated remarkable effectiveness in mutation testing analysis. In our evaluations, we found that approximately 80% of mutations, created by Guerra and et al. [3], were successfully killed using ACO and GWO algorithms. This exceptional mutation-killing rate underscores the tool's robustness and utility for software testing and quality assurance. For more details please visit our paper [1].
+Yekta framework simplifies the model generation process by providing a user-friendly interface to create test models. It supports three algorithms: ACO (Ant Colony Optimization), GWO (Grey Wolf Optimization), and a random procedure, enabling users to generate models based on specific algorithmic strategies. 
+Yekta is a powerful tool for generating models and has demonstrated remarkable effectiveness in mutation testing analysis, so it is specially tailored to model-based testing. In our evaluations [1], we found that approximately 80% of mutations, created by Guerra and et al. [3], were successfully killed using ACO algorithm. This exceptional mutation-killing rate underscores the tool's robustness and utility for software testing and quality assurance.
 
 
 ## Prerequisites
@@ -75,12 +75,11 @@ We welcome contributions to Yekta framework. If you'd like to contribute, please
 This project is licensed under the MIT Licens - see the [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
 
 ## References
-[1] M. Karimi, Sh. Kolahdouz-Rahimi, J. Troya (2023). "Ant-colony optimization for automating test model generation in model transformation testing". JSS 2023,
-https://www.sciencedirect.com/science/article/abs/pii/S0164121223002777.
+[1] Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Ant-colony optimization for automating test model generation in model transformation testing". Journal of Systems and Software, Volume 208, 1--16 2024. doi: 10.1016/j.jss.2023.111882
 
 [2] **TBC [Submitted]:** Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Yekta: A framework for automated test models generation applying meta-heuristic algorithms". SoftwareX, 2023.
 
-[3] Guerra, E., Cuadrado, J. S., & de Lara, J. (2019). Towards Effective Mutation Testing for ATL. In 22nd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems, MODELS 2019, Munich, Germany, September 15-20, 2019 (pp. 78–88). IEEE. doi: 10.1109/MODELS.2019.00-13.
+[3] Esther Guerra, Jesús Sánchez Cuadrado, Juan de Lara. Towards Effective Mutation Testing for ATL. In 22nd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems, MODELS 2019, Munich, Germany, September 15-20, 2019 (pp. 78–88). IEEE. doi: 10.1109/MODELS.2019.00-13.
 
 [4] J. S´anchez Cuadrado, E. Guerra, and J. de Lara, “Static analysis of model transformations,” IEEE Trans. Software Eng., vol. 43, no. 9, pp. 868–897, 2017.
 
