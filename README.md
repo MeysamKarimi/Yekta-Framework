@@ -1,5 +1,5 @@
 # Yekta-Framework
-Welcome to Yekta framework! This tool is designed to generate models using the meta-heuristic algorithms "Ant-Colony Optimization" (ACO) and "Gray-Wolf Optimization" (GWO). This tool helps to generate and manipulating models based on user-defined metamodels, OCL constraints, and optional algorithm-specific inputs. Whether you are a researcher, developer, or tester, this tool simplifies the process of generating models for your projects.
+Welcome to Yekta framework! This tool is designed to generate models using the meta-heuristic algorithms "Ant-Colony Optimization" (ACO) and "Gray-Wolf Optimization" (GWO). It also integrates a random generator. The tool helps to generate and manipulating models based on user-defined metamodels, OCL constraints, and optional algorithm-specific inputs. Whether you are a researcher, developer, or tester, this tool simplifies the process of generating models for your projects.
 
 ## Table of Contents
 - [Overview](#overview)
