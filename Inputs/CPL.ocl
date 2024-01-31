@@ -1,0 +1,37 @@
+--import 'platform:/resource/efinder.core.tests/resources/metamodels/CPL.ecore'
+
+package CPL
+
+--SubAction Id should not be null
+context SubAction inv IdMustNotBeNull:
+	self.id.size() > 0
+	
+--is propery in SwitchedAddress corresponds to the type of string
+context SwitchedAddress inv IsInSwitchedAddressIsTypeOfString:
+	self.is.oclIsTypeOf(String)
+	
+--Each AddressSwitch has only one address
+context AddressSwitch inv AddressSwitchHasOneAddress:  
+	self.addresses->size() = 1
+	
+--Each Switch notPresent has to be null
+context Switch inv SwtitchNotPresentIsNull:
+	self.notPresent.oclIsUndefined()	
+
+--Each StringSwitch must have more than one SwitchedString 
+context StringSwitch inv HasMoreThanOneSwitchedString:  
+	self.strings->size() > 1
+
+--Each LanguageSwitch must have one language 
+context LanguageSwitch inv LanguageSwitchHasOneLanguage:  
+	self.languages->size() = 1
+	
+--Each reject must have a reason
+context Reject inv RejectMustNotBeNull:
+	self.reason->notEmpty()
+	
+--Each CPL must have less than 10 elementss
+context CPLModel inv CPLModelHasLessThanTenElements:
+	self.elements->size() < 20
+	
+endpackage

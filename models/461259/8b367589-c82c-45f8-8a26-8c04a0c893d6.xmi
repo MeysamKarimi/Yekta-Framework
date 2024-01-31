@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="knuth">
-  <sons firstName="poincare"/>
-  <sons firstName="leakey"/>
-  <sons firstName="matsumoto"/>
-  <daughters firstName="gould"/>
-  <daughters firstName="cori"/>
-  <daughters firstName="shamir"/>
-</Families:Family>

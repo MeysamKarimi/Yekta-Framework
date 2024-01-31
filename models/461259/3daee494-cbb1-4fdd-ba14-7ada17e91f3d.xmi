@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="chaum">
-  <sons firstName="wilbur"/>
-  <sons firstName="visvesvaraya"/>
-  <sons firstName="villani"/>
-  <daughters firstName="ramanujan"/>
-  <daughters firstName="mendeleev"/>
-  <daughters firstName="yonath"/>
-</Families:Family>

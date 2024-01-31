@@ -1,0 +1,26 @@
+--import 'platform:/resource/efinder.core.tests/resources/metamodels/Maude.ecore'
+
+package Maude
+
+--Operation name should not be null
+context Operation inv NameMustNotBeNull:
+	self.name->notEmpty()
+	
+--label propery in Statement corresponds to the kind of string
+context Statement inv LabelInStatementIsKindOfString:
+	self.label.oclIsKindOf(String)
+	
+--Each OpTypedMapping must have more than two atts
+context OpTypedMapping inv OpTypedMappingHasMoreThanTwoAtts:  
+	self.atts->size() > 2
+
+--Each MaudeSpec must have at least one PrintableEls
+context MaudeSpec inv HasMoreThanOnePrintableEls:  
+	self.printableEls->size() > 1
+
+--Each InstModExp has more than three views
+context InstModExp inv InstModExpHasMoreThanThreeViews:
+	self.views->size() > 3	
+
+	
+endpackage

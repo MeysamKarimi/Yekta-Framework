@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="gagarin">
-  <sons firstName="jepsen"/>
-  <sons firstName="buck"/>
-  <sons firstName="yalow"/>
-  <daughters firstName="banach"/>
-  <daughters firstName="lumiere"/>
-  <daughters firstName="faraday"/>
-</Families:Family>

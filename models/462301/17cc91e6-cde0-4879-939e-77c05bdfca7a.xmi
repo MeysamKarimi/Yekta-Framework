@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="noether">
-  <cities name="swartz">
-    <neighborhoods name="brown">
-      <contains href="models/462301/973d07b3-c98a-4e48-ac17-f339dbbe5459.xmi#//@families.1"/>
-      <schools name="lovelace"/>
-    </neighborhoods>
-  </cities>
-</families:Country>

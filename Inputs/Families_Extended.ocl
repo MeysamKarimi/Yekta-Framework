@@ -1,0 +1,29 @@
+--import 'platform:/resource/efinder.core.tests/resources/metamodels/families_extended.ecore'
+
+package families
+	
+--Each family last name must have at least two characters
+context Family inv familiesLastNameLengthMustBeAtLeastTwoCharacters:
+	self.lastName.size() > 1
+
+--Each country must have at least two cities
+context Country inv HasAtLeastTwoCities:
+	self.cities->size() > 1
+	
+--Each country must have at least three families
+--context Country inv CountryMustHaveAtLeastThreeFamilies:
+	--self.families->size() > 2
+	
+--Each country must have at least one company
+--context Country inv CountryMustHaveAtLeastOneCompany:
+	--self.companies->size() > 0
+	
+--Each Parent if works, should work only for one company
+--context Parent inv WorkInOneCompany:  
+	--Parent.allInstances()->size() > 0 implies self.worksIn->size() = 1
+
+-- There is a School for, at least, 10 Children
+--context School inv TenChildrenPerSchool:
+--self.students->size() >= 10
+
+endpackage

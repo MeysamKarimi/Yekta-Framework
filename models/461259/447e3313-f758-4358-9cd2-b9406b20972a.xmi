@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="robinson">
-  <sons firstName="diffie"/>
-  <sons firstName="beaver"/>
-  <sons firstName="chebyshev"/>
-  <daughters firstName="lovelace"/>
-  <daughters firstName="merkle"/>
-</Families:Family>

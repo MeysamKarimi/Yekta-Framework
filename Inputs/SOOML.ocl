@@ -1,0 +1,42 @@
+--import 'platform:/resource/efinder.core.tests/resources/metamodels/sooml.ecore'
+
+package SOOML
+
+--Each class name has a length of at least three
+context Class inv ClassHasName:
+	self.name.size() > 2	
+
+--Each class must have more than one Operation
+--context Class inv ClassHasMoreThanOneOperations:  
+--	self.operations->size() > 1
+
+--Each stateMachine must have at least one state
+--context StateMachine inv HasAtLeastOneState:  
+--	self.states->size() > 0
+
+--Each state must have at least one transition
+--context State inv HasAtLeastTwoTransitions:  
+--	self.transitions->size() > 1
+	
+--Each Model must have two enumerations
+--context Model inv HasTwoEnums:  
+--	self.enumerations->size() > 1
+
+--Each Class must have no features
+--context Class inv HasNoFeatures:  
+--	self.features->size() = 0
+	
+--Upper has a value greater or equal to lower 
+--context StructuralFeature inv UpperGreaterThanLower:  
+--	self.upper->size() >= self.lower->size()	
+
+--Each Model must have five classes
+context Model inv HasFiveClasses:  
+	self.classes->size() = 5
+	
+	
+--Each Enumeration must have one literal
+context Enumeration inv HasOneLiteral:  
+	self.literal->size() = 1
+
+endpackage

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="ganguly">
-  <families lastName="johnson">
-    <daughters firstName="chaum" family="//@families.0">
-      <livesIn href="models/462301/0bbf6237-9f58-4dfa-ae97-0f4689c8834b.xmi#//@cities.1"/>
-    </daughters>
-  </families>
-  <cities name="elion"/>
-</families:Country>

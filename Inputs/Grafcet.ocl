@@ -1,0 +1,33 @@
+--import 'platform:/resource/efinder.core.tests/resources/metamodels/grafcet.ecore'
+
+package grafcet
+
+-- Steps should be active
+context Step inv StepIsActive:
+	self.isActive = true
+	
+--Each transition condition must have at least three characters
+context Step inv stepNameMustBeAtLeastThreeCharacters:
+	self.name.size > 2
+
+-- Grafcet has no connections
+--context Connection inv GrafcetHasNoConnections:
+--self.grafcet.oclIsUndefined()
+
+--Each grafcet must have two connections
+--context Grafcet inv GrafcetHasMoreThanThreeConnections:  
+--	self.connections->size() > 3
+
+--Each step must have one incoming
+--context Step inv StepHasMoreThanOneIncomingConnection:  
+--	 self.incomingConnections->size() > 2
+
+--Each transition must have two outgoings
+context Transition inv TransitionHasTwoOutgoingConnections:  
+	self.outgoingConnections->size() > 1
+	
+--In a transition, number of Incomming must be more than Outgoing
+context Transition inv MoreIncommingThanOutgoing:
+  self.incomingConnections->size() > self.outgoingConnections->size()
+
+endpackage

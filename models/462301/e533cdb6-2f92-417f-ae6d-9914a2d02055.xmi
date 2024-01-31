@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="torvalds">
-  <cities name="mirzakhani">
-    <companies href="models/462301/45f331ac-cbfa-42f0-8fe2-bc6fda81dc67.xmi#//@companies.0"/>
-  </cities>
-</families:Country>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="bouman">
-  <families lastName="sinoussi">
-    <mothers firstName="lichterman" family="//@families.0">
-      <livesIn href="models/462301/8677b49c-8dd0-44f1-a048-8f34cb1e2fe3.xmi#//@cities.0"/>
-      <worksIn href="models/462301/5bbfa0d9-f70e-44d4-9914-6d34f72dfa96.xmi#//@companies.0"/>
-    </mothers>
-  </families>
-</families:Country>

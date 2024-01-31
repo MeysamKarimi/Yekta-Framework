@@ -1,0 +1,37 @@
+--import 'platform:/resource/efinder.core.tests/resources/metamodels/families.ecore'
+
+package Families
+
+-- Family lastName should be between 10 and 14
+context Family inv LastNameWithSpecificSize:
+	self.lastName.size() > 10 and self.lastName.size() < 14
+
+--Each Memer firstName must have at least two characters
+context Member inv FirstNameAtLeastFourCharacters:
+	self.firstName.size() > 4
+
+-- There are at least four members
+context Member inv MoreThan3Members: 
+	Member.allInstances()->size() > 3
+
+-- Family has certainly son(s)
+context Family inv MustHaveAtLeastOneSon:
+	self.sons->size() > 0
+
+-- Family has at least two daughters
+context Family inv MustHaveAtLeastTwoDaughters:
+	self.daughters->size() > 1	
+	
+-- Families should have equal number of sons and daughters
+context Family inv SameNumberOfSonsAndDaughters:
+self.daughters->size() = self.sons->size()
+
+endpackage
+
+--Specific size
+--different solvers -> may be slower
+--family is invalid if the size of daughters is not valid
+--neg 
+-- SAT Solver -> 1) Mace-like solvers (Model finder) 2) Minisat solvers
+-- Consistency is the key. We don't like to focus on this  -> SAT Solver
+-- zero chance to get it by random/realisitic  

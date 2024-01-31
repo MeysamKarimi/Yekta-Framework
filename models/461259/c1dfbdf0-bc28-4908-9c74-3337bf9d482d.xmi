@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<Families:Family xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Families="Families" lastName="panini">
-  <sons firstName="sinoussi"/>
-  <sons firstName="merkle"/>
-  <sons firstName="proskuriakova"/>
-  <daughters firstName="pasteur"/>
-  <daughters firstName="knuth"/>
-  <daughters firstName="pare"/>
-</Families:Family>

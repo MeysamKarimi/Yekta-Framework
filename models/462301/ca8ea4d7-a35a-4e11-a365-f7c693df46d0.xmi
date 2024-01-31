@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="ASCII"?>
-<families:Country xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:families="http://families" name="solomon">
-  <cities name="jepsen"/>
-  <companies name="bose">
-    <isIn href="models/462301/6f6b945d-97ca-4335-9560-c24e4974b316.xmi#//@cities.0"/>
-  </companies>
-</families:Country>
