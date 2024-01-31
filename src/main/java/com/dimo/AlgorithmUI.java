@@ -300,7 +300,7 @@ public class AlgorithmUI {
             in.close();
             oclConstraints = constraintMap;
         } catch (Exception ex) {
-            displayReport("Error in parsing OCL file, The OCL check is ignored! The exception: " + ex.toString(), ReportType.ERROR);
+            displayReport("The OCL check is ignored! The exception: " + ex.toString(), ReportType.INFO);
             oclConstraints = Map.of();
         }
         return oclConstraints;
