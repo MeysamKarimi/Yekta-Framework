@@ -81,10 +81,10 @@ This project is licensed under the MIT Licens - see the [MIT](https://github.com
 ## References
 [1] Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Ant-colony optimization for automating test model generation in model transformation testing". Journal of Systems and Software, Volume 208, 1--16 2024. doi: 10.1016/j.jss.2023.111882
 
-[2] **TBC [Submitted]:** Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Yekta: A framework for automated test models generation applying meta-heuristic algorithms". SoftwareX, 2023.
+[2] Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Yekta: A framework for automated test models generation applying meta-heuristic algorithms". SoftwareX, 2023.
 
 [3] Esther Guerra, Jesús Sánchez Cuadrado, Juan de Lara. Towards Effective Mutation Testing for ATL. In 22nd ACM/IEEE International Conference on Model Driven Engineering Languages and Systems, MODELS 2019, Munich, Germany, September 15-20, 2019 (pp. 78–88). IEEE. doi: 10.1109/MODELS.2019.00-13.
 
-[4] J. S´anchez Cuadrado, E. Guerra, and J. de Lara, “Static analysis of model transformations,” IEEE Trans. Software Eng., vol. 43, no. 9, pp. 868–897, 2017.
+[4] Jesús Sánchez Cuadrado, Esther Guerra, and Juan de Lara, “Static analysis of model transformations,” IEEE Transactions on Software Engineering, vol. 43, no. 9, pp. 868–897, 2017.
 
 
