@@ -57,7 +57,7 @@ Once you have Yekta framework up and running, follow these steps to create test 
    3. **Number of Iterations**: Indicates the number of iterations each algorithm should run.
    4. **Population Size**: Indicates the number of agents - Ants in ACO or Wolves in GWO.
 5. **Run**: Click the "Run" button to initiate the model generation process.
-6. **Result**: The framework will generate models with the specified number of EObjects based on your inputs for each model in the folder called "model" in the main package.
+6. **Result**: The framework will generate the number of models specified in "Model Count", each with the specified number of elements in "Element Count". Models are generated in the folder called "models" in the main package of the project.
 
 ## Class Diagram
 
