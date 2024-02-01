@@ -76,7 +76,7 @@ We welcome contributions to Yekta framework. If you'd like to contribute, please
 
 ## License
 
-This project is licensed under the MIT Licens - see the [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) file for details.
 
 ## References
 [1] Meysam Karimi, Shekoufeh Kolahdouz-Rahimi, Javier Troya. "Ant-colony optimization for automating test model generation in model transformation testing". Journal of Systems and Software, Volume 208, 1--16 2024. doi: 10.1016/j.jss.2023.111882
