@@ -44,12 +44,11 @@ To get started with Yekta framework, follow these steps:
 
 Now you are ready to use Yekta framework to create and manipulate test models with ACO, GWO, and Random algorithms.
 
-
 ## Usage
 
 Once you have Yekta framework up and running, follow these steps to create test models:
 
-1. **Metamodel and OCL Files**: Provide your metamodel and the optional well-formed OCL constraints expressed on the metamodel as input to the tool. Some sample Metamodels and related OCLs can be found under /Inputs in the roo of the project.
+1. **Metamodel and OCL Files**: Provide your metamodel and the optional well-formed OCL constraints expressed on the metamodel as input to the tool. Some sample Metamodels and related OCL files can be found under Inputs folder in the root of the project.
 2. **Select Algorithm**: Choose one of the supported algorithms: ACO, GWO, or Random.
 3. **Algorithm-Specific Inputs**: Depending on the selected algorithm, provide the necessary algorithm-specific inputs. Consider the fact that the number of agents specified by "Population size" parameter, must be bigger or equal to the number of models you like to generate specified by "Model Count" parameter. The default values for the alpha and beta parameters in the ACO algorithm are set to 1. This choice implies an equal consideration of both historical (pheromone trail) and heuristic information in guiding ant decisions during solution construction.
 4. **General Inputs**: Choose proper values for following inputs:
